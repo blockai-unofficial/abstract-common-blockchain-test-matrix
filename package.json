@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/blockai/abstract-common-blockchain-test-matrix/issues"
   },
-  "homepage": "https://github.com/blockai/abstract-common-blockchain-test-matrix"
+  "homepage": "https://github.com/blockai/abstract-common-blockchain-test-matrix",
+  "dependencies": {
+    "blockr-unofficial": "^1.1.6"
+  }
 }

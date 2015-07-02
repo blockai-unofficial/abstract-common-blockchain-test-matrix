@@ -1,37 +1,57 @@
 var testInstanceCreator = require('./test-instance.js');
 
-var chainMainnet = require('chain-unofficial')({
+//abstract common blockchain adapters
+var chain = require("chain-unofficial");
+var blockchaininfo = require("blockchaininfo-unofficial");
+var blockcypher = require("blockcypher-unofficial");
+var blockr = require("blockr-unofficial");
+
+/* pending tests as of now */
+// var blocktrail = require("blocktrail-unofficial");
+// var biteasy = require("biteasy-unofficial");
+
+
+var blockchaininfoMainnet = blockchaininfo(); 
+
+var blockcypherMainnet = blockcypher({
+  network: "bitcoin"
+});
+var blockcypherTestnet = blockcypher({
+  network: "testnet"
+});
+
+var blockrMainnet = blockr();
+
+var chainMainnet = chain({
   network: "testnet", 
   key: process.env.CHAIN_API_KEY_ID, 
   secret: process.env.CHAIN_API_KEY_SECRET
 });
-var chainTestnet = require('chain-unofficial')({
+var chainTestnet = chain({
   network: "bitcoin", 
   key: process.env.CHAIN_API_KEY_ID, 
   secret: process.env.CHAIN_API_KEY_SECRET
 });
 
-var blockchaininfo = require('blockchaininfo-unofficial')(); 
-
-var blockcypherMainnet = require('blockcypher-unofficial')({
-  network: "bitcoin"
-});
-var blockcypherTestnet = require('blockcypher-unofficial')({
-  network: "testnet"
-});
 
 
 var testMatrix = [
   {
-    name: "blockchaininfo",
+    name: "blockchaininfoMainnet",
     network: "mainnet",
-    client: blockchaininfo,
+    client: blockchaininfoMainnet,
     test: testInstanceCreator(),
   },
   {
     name: "blockcypherMainnet",
     network: "mainnet",
     client: blockcypherMainnet,
+    test: testInstanceCreator(),
+  },
+  {
+    name: "blockrMainnet",
+    network: "mainnet",
+    client: blockrMainnet,
     test: testInstanceCreator(),
   },
   {
@@ -142,16 +162,20 @@ function fillTestInstance(apiProvider, callback) {
     }
   });
 }
-     
 
-var apiCount = 0;
-testMatrix.forEach(function (apiProvider){
-  fillTestInstance(apiProvider, function(){
-    if(++apiCount === testMatrix.length){
-      console.log(testMatrix);
-    }
+function populateMatrix(callback){
+  var apiCount = 0;
+  testMatrix.forEach(function (apiProvider){
+    fillTestInstance(apiProvider, function(){
+      if(++apiCount === testMatrix.length){
+        callback(testMatrix);
+      }
+    });
   });
-});
+}
+
+module.exports = populateMatrix;
+
 
 
 
