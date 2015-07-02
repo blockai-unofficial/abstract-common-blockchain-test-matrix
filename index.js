@@ -1,26 +1,41 @@
 var testInstanceCreator = require('./test-instance.js');
 
 //abstract common blockchain adapters
-var chain = require("chain-unofficial");
+var biteasy = require("biteasy-unofficial");
 var blockchaininfo = require("blockchaininfo-unofficial");
 var blockcypher = require("blockcypher-unofficial");
 var blockr = require("blockr-unofficial");
+var blocktrail = require("blocktrail-unofficial");
+var chain = require("chain-unofficial");
 
-/* pending tests as of now */
-// var blocktrail = require("blocktrail-unofficial");
-// var biteasy = require("biteasy-unofficial");
-
+var biteasyMainnet = biteasy({
+  network: "mainnet"
+});
+var biteasyTestnet = biteasy({
+  network: "testnet"
+});
 
 var blockchaininfoMainnet = blockchaininfo(); 
 
 var blockcypherMainnet = blockcypher({
-  network: "bitcoin"
+  network: "mainnet"
 });
 var blockcypherTestnet = blockcypher({
   network: "testnet"
 });
 
 var blockrMainnet = blockr();
+
+var blocktrailMainnet = blocktrail({
+  network: "mainnet",
+  apiKey: process.env.BLOCKTRAIL_API_KEY_ID,
+  apiSecret: process.env.BLOCKTRAIL_API_KEY_SECRET
+});
+var blocktrailTestnet = blocktrail({
+  network: "testnet",
+  apiKey: process.env.BLOCKTRAIL_API_KEY_ID,
+  apiSecret: process.env.BLOCKTRAIL_API_KEY_SECRET
+});
 
 var chainMainnet = chain({
   network: "testnet", 
@@ -37,6 +52,18 @@ var chainTestnet = chain({
 
 var testMatrix = [
   {
+    name: "biteasyMainnet",
+    network: "mainnet",
+    client: biteasyMainnet,
+    test: testInstanceCreator(),
+  },
+  {
+    name: "biteasyTestnet",
+    network: "testnet",
+    client: biteasyTestnet,
+    test: testInstanceCreator(),
+  },
+  {
     name: "blockchaininfoMainnet",
     network: "mainnet",
     client: blockchaininfoMainnet,
@@ -49,15 +76,27 @@ var testMatrix = [
     test: testInstanceCreator(),
   },
   {
+    name: "blockcypherTestnet",
+    network: "testnet",
+    client: blockcypherTestnet,
+    test: testInstanceCreator(),
+  },
+  {
     name: "blockrMainnet",
     network: "mainnet",
     client: blockrMainnet,
     test: testInstanceCreator(),
   },
   {
-    name: "blockcypherTestnet",
+    name: "blocktrailMainnet",
+    network: "mainnet",
+    client: blocktrailMainnet,
+    test: testInstanceCreator(),
+  },
+  {
+    name: "blocktrailTestnet",
     network: "testnet",
-    client: blockcypherTestnet,
+    client: blocktrailTestnet,
     test: testInstanceCreator(),
   },
   {
@@ -173,6 +212,12 @@ function populateMatrix(callback){
     });
   });
 }
+
+
+populateMatrix(function(testMatrix){
+  console.log(JSON.stringify(testMatrix));
+});
+
 
 module.exports = populateMatrix;
 

@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/blockai/abstract-common-blockchain-test-matrix",
   "dependencies": {
-    "blockr-unofficial": "^1.1.6"
+    "biteasy-unofficial": "^1.1.9",
+    "blockr-unofficial": "^1.1.6",
+    "blocktrail-unofficial": "^1.1.3"
   }
 }
