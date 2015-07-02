@@ -45,12 +45,12 @@ var blocktrailTestnet = blocktrail({
 
 /***** Chain *****/
 var chainMainnet = chain({
-  network: "testnet", 
+  network: "bitcoin", 
   key: process.env.CHAIN_API_KEY_ID, 
   secret: process.env.CHAIN_API_KEY_SECRET
 });
 var chainTestnet = chain({
-  network: "bitcoin", 
+  network: "testnet", 
   key: process.env.CHAIN_API_KEY_ID, 
   secret: process.env.CHAIN_API_KEY_SECRET
 });
@@ -271,7 +271,7 @@ function fillTestInstance(apiProvider, callback) {
     function (callback) {
       apiProvider.client.Transactions.Latest(function (err, resp) {
         if (!err) {
-          var transactionObj = resp[0];
+          var transactionObj = resp;
           testInstance.Transactions.Latest.hex = (transactionObj.hex != null);
           testInstance.Transactions.Latest.txHex = (transactionObj.txHex != null);
           testInstance.Transactions.Latest.txid = (transactionObj.txid != null);
