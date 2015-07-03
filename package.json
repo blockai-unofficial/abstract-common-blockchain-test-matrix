@@ -2,9 +2,10 @@
   "name": "abstract-common-blockchain-test-matrix",
   "version": "1.0.2",
   "description": "A module to demonstrate the aspects of common-blockchain that are supported by various blockchain providers",
-  "main": "index.js",
+  "main": "./src/server.js",
   "scripts": {
-    "test": "node test.js"
+    "start": "node ./src/server.js",
+    "test": "node ./test/test.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,9 @@
     "blockcypher-unofficial": "^1.1.1",
     "blockr-unofficial": "^1.1.6",
     "blocktrail-unofficial": "^1.1.3",
-    "chain-unofficial": "^1.2.1"
+    "body-parser": "^1.13.1",
+    "chain-unofficial": "^1.2.1",
+    "ejs": "^2.3.2",
+    "express": "^4.13.0"
   }
 }

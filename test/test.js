@@ -1,4 +1,4 @@
-var populateMatrix = require('./index.js');
+var populateMatrix = require('../src/abstractCBTester.js');
 
 populateMatrix(function (testMatrix) {
   console.log(testMatrix);

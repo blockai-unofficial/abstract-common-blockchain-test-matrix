@@ -1,4 +1,4 @@
-var testInstanceCreator = require('./test-instance.js');
+var testInstanceCreator = require('./createTestInstance.js');
 var async = require('async');
 
 /***** API Providers for abstract-common-blockchain *****/
