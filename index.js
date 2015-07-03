@@ -139,9 +139,9 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Addresses.Summary.totalSent = (resp[0].totalSent != null);
           testInstance.Addresses.Summary.txCount = (resp[0].txCount != null);
           callback(null, testInstance.Addresses.Summary);
-        }
+        } 
         else {
-          callback('Addresses.Summary: ' + err, null);
+          callback(null, null);
         }
       });
     },
@@ -157,8 +157,8 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Addresses.Transactions.txId = (resp.txId != null);
           callback(null, testInstance.Addresses.Transactions);
         }
-        else {
-          callback('Addresses.Transactions: ' + err, null);
+        else{
+          callback(null, null);
         }
       });
     },
@@ -176,8 +176,8 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Addresses.Unspents.scriptPubKey = (unspentObj.scriptPubKey != null);
           callback(null, testInstance.Addresses.Unspents);
         }
-        else {
-          callback('Addresses.Unspents: ' + err, null);
+        else{
+          callback(null, null);
         }
       });
     },
@@ -190,9 +190,9 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Blocks.Get.blockId = (blockObj.blockId != null);
           callback(null, testInstance.Blocks.Get);
         }
-        else {
-          callback('Blocks.Get: ' + err, null);
-        }
+        else{
+          callback(null, null);
+        } 
       });
     },
 
@@ -204,8 +204,8 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Blocks.Latest.blockId = (blockObj.blockId != null);
           callback(null, testInstance.Blocks.Latest);
         }
-        else {
-          callback('Blocks.Latest: ' + err, null);
+        else{
+          callback(null, null);
         }
       });
     },
@@ -219,9 +219,9 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Blocks.Transactions.txId = (blockObj.txId != null);
           callback(null, testInstance.Blocks.Transactions);
         }
-        else {
-          callback('Blocks.Transactions: ' + err, null);
-        }
+        else{
+          callback(null, null);
+        }  
       });
     },
 
@@ -262,8 +262,8 @@ function fillTestInstance(apiProvider, callback) {
 
           callback(null, testInstance.Transactions.Get);
         }
-        else {
-          callback('Transactions.Get: ' + err, null);
+        else{
+          callback(null, null);
         }
       });
     },
@@ -306,7 +306,7 @@ function fillTestInstance(apiProvider, callback) {
           callback(null, testInstance.Transactions.Latest);
         }
         else {
-          callback('Transactions.Latest: ' + err, null);
+          callback(null, null);
         }
       });
     },
@@ -328,7 +328,7 @@ function fillTestInstance(apiProvider, callback) {
           callback(null, testInstance.Transactions.Outputs);
         }
         else {
-          callback('Transactions.Outputs: ' + err, null);
+          callback(null, null);
         }
       });
     },
@@ -342,9 +342,9 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Transactions.Status.txId = (blockObj.txId != null);
           callback(null, testInstance.Transactions.Status);
         }
-        else {
-          callback('Transactions.Status: ' + err, null);
-        }
+        else{
+          callback(null, null);
+        }  
       });
     }
   ], function (error, results) {
