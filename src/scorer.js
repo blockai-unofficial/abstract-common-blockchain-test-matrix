@@ -23,48 +23,60 @@ function generateScores(callback){
 function scoreProvider(apiProviderObj){
   var tests = apiProviderObj.test;
   var score = 0;
+  
 
-  //Address summary
-  score += (tests.Addresses.Summary.address) ? 1 : 0;
-  score += (tests.Addresses.Summary.balance) ? 1 : 0;
-  score += (tests.Addresses.Summary.totalRecieved) ? 1 : 0;
-  score += (tests.Addresses.Summary.totalSent) ? 1 : 0;
-  score += (tests.Addresses.Summary.txCount) ? 1 : 0;
+  /*****ADDRESSES TOTAL SCORE OF 35*********/
 
-  //Address transcations
+  //Address summary total of 
+  score += (tests.Addresses.Summary.address) ? 3 : 0;
+  score += (tests.Addresses.Summary.balance) ? 5 : 0;
+  score += (tests.Addresses.Summary.totalRecieved) ? 2 : 0;
+  score += (tests.Addresses.Summary.totalSent) ? 2: 0;
+  score += (tests.Addresses.Summary.txCount) ? 3 : 0;
+
+  //Address transactions
   score += (tests.Addresses.Transactions.blockHeight) ? 1 : 0;
-  score += (tests.Addresses.Transactions.blockId) ? 1 : 0;
+  score += (tests.Addresses.Transactions.blockId) ? 2 : 0;
   score += (tests.Addresses.Transactions.hex) ? 1 : 0;
   score += (tests.Addresses.Transactions.txHex) ? 1 : 0;
-  score += (tests.Addresses.Transactions.txid) ? 1 : 0;
-  score += (tests.Addresses.Transactions.txId) ? 1 : 0;
+  score += (tests.Addresses.Transactions.txid) ? 2 : 0;
+  //score += (tests.Addresses.Transactions.txId) ? 1 : 0;
   
   //Address unspents
   score += (tests.Addresses.Unspents.address) ? 1 : 0;
   score += (tests.Addresses.Unspents.confirmations) ? 1 : 0;
-  score += (tests.Addresses.Unspents.txid) ? 1 : 0;
-  score += (tests.Addresses.Unspents.txId) ? 1 : 0;
-  score += (tests.Addresses.Unspents.value) ? 1 : 0;
-  score += (tests.Addresses.Unspents.amount) ? 1 : 0;
-  score += (tests.Addresses.Unspents.vout) ? 1 : 0;
+  score += (tests.Addresses.Unspents.txid) ? 3 : 0;
+  //score += (tests.Addresses.Unspents.txId) ? 1 : 0;
+  score += (tests.Addresses.Unspents.value) ? 3 : 0;
+  //score += (tests.Addresses.Unspents.amount) ? 1 : 0;
+  score += (tests.Addresses.Unspents.vout) ? 3 : 0;
   score += (tests.Addresses.Unspents.scriptPubKey) ? 1 : 0;
+  //*****ADDRESSES*********//
+
   
+
+  /********BLOCKS TOTAL SCORE OF 15*********/
   //Blocks get
-  score += (tests.Blocks.Get.blockHex) ? 1 : 0;
-  score += (tests.Blocks.Get.blockId) ? 1 : 0;
+  score += (tests.Blocks.Get.blockHex) ? 2 : 0;
+  score += (tests.Blocks.Get.blockId) ? 3 : 0;
   
   //Blocks latest
-  score += (tests.Blocks.Latest.blockHex) ? 1 : 0;
-  score += (tests.Blocks.Latest.blockId) ? 1 : 0;
+  score += (tests.Blocks.Latest.blockHex) ? 2 : 0;
+  score += (tests.Blocks.Latest.blockId) ? 3 : 0;
 
   //Blocks Transactions
-  score += (tests.Blocks.Transactions.blockId) ? 1 : 0;
-  score += (tests.Blocks.Transactions.txid) ? 1 : 0;
-  score += (tests.Blocks.Transactions.txId) ? 1 : 0;
+  score += (tests.Blocks.Transactions.blockId) ?  2: 0;
+  score += (tests.Blocks.Transactions.txid) ? 3 : 0;
+  //score += (tests.Blocks.Transactions.txId) ? 1 : 0;
+
+  /********BLOCKS**********/
+
+
+  /******TRANSACTIONS TOTAL SCORE OF 50***********/
   
   //Transactions get
-  score += (tests.Transactions.Get.hex) ? 1 : 0;
-  score += (tests.Transactions.Get.txHex) ? 1 : 0;
+  score += (tests.Transactions.Get.hex) ? 5 : 0;
+  //score += (tests.Transactions.Get.txHex) ? 5 : 0;
   score += (tests.Transactions.Get.txid) ? 1 : 0;
   score += (tests.Transactions.Get.txId) ? 1 : 0;
   score += (tests.Transactions.Get.version) ? 1 : 0;
@@ -93,45 +105,47 @@ function scoreProvider(apiProviderObj){
 
 
   //Transactions Latest
-  score += (tests.Transactions.Latest.hex) ? 1 : 0;
-  score += (tests.Transactions.Latest.txHex) ? 1 : 0;
-  score += (tests.Transactions.Latest.txid) ? 1 : 0;
-  score += (tests.Transactions.Latest.txId) ? 1 : 0;
-  score += (tests.Transactions.Latest.version) ? 1 : 0;
-  score += (tests.Transactions.Latest.locktime) ? 1 : 0;
-  score += (tests.Transactions.Latest.fee) ? 1 : 0;
-  score += (tests.Transactions.Latest.vin.txid) ? 1 : 0;
-  score += (tests.Transactions.Latest.vin.txId) ? 1 : 0;
-  score += (tests.Transactions.Latest.vin.vout) ? 1 : 0;
-  score += (tests.Transactions.Latest.vin.scriptSig.asm) ? 1 : 0;
-  score += (tests.Transactions.Latest.vin.scriptSig.hex) ? 1 : 0;
-  score += (tests.Transactions.Latest.vin.sequence) ? 1 : 0;
-  score += (tests.Transactions.Latest.vout.value) ? 1 : 0;
-  score += (tests.Transactions.Latest.vout.index) ? 1 : 0;
-  score += (tests.Transactions.Latest.vout.n) ? 1 : 0;
-  score += (tests.Transactions.Latest.vout.spentTxid) ? 1 : 0;
-  score += (tests.Transactions.Latest.vout.scriptPubKey.asm) ? 1 : 0;
-  score += (tests.Transactions.Latest.vout.scriptPubKey.hex) ? 1 : 0;
-  score += (tests.Transactions.Latest.vout.scriptPubKey.reqSigs) ? 1 : 0;
-  score += (tests.Transactions.Latest.vout.scriptPubKey.type) ? 1 : 0;
-  score += (tests.Transactions.Latest.vout.addresses) ? 1 : 0;
-  score += (tests.Transactions.Latest.confirmations) ? 1 : 0;
-  score += (tests.Transactions.Latest.blocktime) ? 1 : 0;
-  score += (tests.Transactions.Latest.blockhash) ? 1 : 0;
-  score += (tests.Transactions.Latest.blockindex) ? 1 : 0;
-  score += (tests.Transactions.Latest.timeReceived) ? 1 : 0;
+  // score += (tests.Transactions.Latest.hex) ? 1 : 0;
+  // score += (tests.Transactions.Latest.txHex) ? 1 : 0;
+  score += (tests.Transactions.Latest.txid) ? 5 : 0;
+  // score += (tests.Transactions.Latest.txId) ? 1 : 0;
+  // score += (tests.Transactions.Latest.version) ? 1 : 0;
+  // score += (tests.Transactions.Latest.locktime) ? 1 : 0;
+  // score += (tests.Transactions.Latest.fee) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vin.txid) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vin.txId) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vin.vout) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vin.scriptSig.asm) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vin.scriptSig.hex) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vin.sequence) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vout.value) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vout.index) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vout.n) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vout.spentTxid) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vout.scriptPubKey.asm) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vout.scriptPubKey.hex) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vout.scriptPubKey.reqSigs) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vout.scriptPubKey.type) ? 1 : 0;
+  // score += (tests.Transactions.Latest.vout.addresses) ? 1 : 0;
+  // score += (tests.Transactions.Latest.confirmations) ? 1 : 0;
+  // score += (tests.Transactions.Latest.blocktime) ? 1 : 0;
+  // score += (tests.Transactions.Latest.blockhash) ? 1 : 0;
+  // score += (tests.Transactions.Latest.blockindex) ? 1 : 0;
+  // score += (tests.Transactions.Latest.timeReceived) ? 1 : 0;
   
   //Transactions Outputs
   score += (tests.Transactions.Outputs.scriptPubKey) ? 1 : 0;
-  score += (tests.Transactions.Outputs.txid) ? 1 : 0;
-  score += (tests.Transactions.Outputs.txId) ? 1 : 0;
-  score += (tests.Transactions.Outputs.value) ? 1 : 0;
-  score += (tests.Transactions.Outputs.vout) ? 1 : 0;
+  score += (tests.Transactions.Outputs.txid) ? 3 : 0;
+  //score += (tests.Transactions.Outputs.txId) ? 1 : 0;
+  score += (tests.Transactions.Outputs.value) ? 3 : 0;
+  score += (tests.Transactions.Outputs.vout) ? 3 : 0;
 
   //Transactions status
-  score += (tests.Transactions.Status.blockId) ? 1 : 0;
-  score += (tests.Transactions.Status.txid) ? 1 : 0;
-  score += (tests.Transactions.Status.txId) ? 1 : 0;
+  score += (tests.Transactions.Status.blockId) ? 3 : 0;
+  score += (tests.Transactions.Status.txid) ? 2 : 0;
+  // score += (tests.Transactions.Status.txId) ? 1 : 0;
+
+  /********TRANSACTIONS*********/
 
   return score;
 }
