@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 var abstractCBMatrix = require('./abstractCBMatrix.js');
+var scorer = require('./scorer.js');
 
 app.set('port', (process.env.PORT || '3000'));
 app.set('views', path.join(__dirname, './ejs'));
@@ -18,15 +19,19 @@ var server = app.listen(3000, function () {
 
 function abstractCB(callback) {
   abstractCBMatrix(false, function (matrix) {
-    callback(matrix);
+    scorer(function (score){
+      callback(matrix, score);
+    });
   });
 }
 
+
 app.get('/', function (req, res, next) {
-  abstractCB(function (matrix) {
+  abstractCB(function (matrix, score) {
     res.render('template', { 
       title: 'abstract-common-blockchain-test-matrix',
-      matrix: JSON.stringify(matrix)
+      matrix: JSON.stringify(matrix),
+      score: JSON.stringify(score)
     });
   });
 });

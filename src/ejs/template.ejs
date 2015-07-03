@@ -33,18 +33,19 @@
       </tr>
 
       <% var matrix = JSON.parse(matrix) %>
+      <% var score = JSON.parse(score) %>
       <tr>
         <td class="check">Overall Score</td>
-        <td class="check"><%=  %></td>
-        <td class="check"><%=  %></td>
-        <td class="check"><%=  %></td>
-        <td class="check"><%=  %></td>
-        <td class="check"><%=  %></td>
-        <td class="check"><%=  %></td>
-        <td class="check"><%=  %></td>
-        <td class="check"><%=  %></td>
-        <td class="check"><%=  %></td>
-        <td class="check"><%=  %></td>
+        <td class="check"><%= score["biteasyMainnet"] %></td>
+        <td class="check"><%= score["biteasyTestnet"] %></td>
+        <td class="check"><%= score["blockchaininfoMainnet"] %></td>
+        <td class="check"><%= score["blockcypherMainnet"] %></td>
+        <td class="check"><%= score["blockcypherTestnet"] %></td>
+        <td class="check"><%= score["blockrMainnet"] %></td>
+        <td class="check"><%= score["blocktrailMainnet"] %></td>
+        <td class="check"><%= score["blocktrailTestnet"] %></td>
+        <td class="check"><%= score["chainMainnet"] %></td>
+        <td class="check"><%= score["chainTestnet"] %></td>
       </tr>
       <tr>
         <td class="check">Addresses.Summary.address</td>

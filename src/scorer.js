@@ -1,16 +1,14 @@
-var generateMatrix = require('./abstractCBTester.js');
+var generateMatrix = require('./abstractCBMatrix.js');
 
 var matrix;
 
 function generateScores(callback){
-  generateMatrix(function (m){
+  generateMatrix(false, function (m){
     matrix = m;
-    score = [];
+    score = {};
     var count = 0;
     matrix.forEach(function (apiProvider){
-      var entry = {};
-      entry[apiProvider.name] = scoreProvider(apiProvider);
-      score.push(entry);
+      score[apiProvider.name] = scoreProvider(apiProvider);
 
       if(++count === matrix.length){
         callback(score);
@@ -139,4 +137,4 @@ function scoreProvider(apiProviderObj){
 }
 
 
-module.exports(generateScores);
+module.exports = generateScores;
