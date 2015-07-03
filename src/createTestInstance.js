@@ -63,6 +63,7 @@ var createTestInstance = function () {
         txid: false,
         txId: false,
         vout: false,
+        addresses: false,
         scriptSig: {
           asm: false,
           hex: false
@@ -101,6 +102,7 @@ var createTestInstance = function () {
         txid: false,
         txId: false,
         vout: false,
+        addresses: false,
         scriptSig: {
           asm: false,
           hex: false
