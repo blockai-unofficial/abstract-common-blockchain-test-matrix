@@ -2,10 +2,195 @@
 <html>
   <head>
     <title><%= title %></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $('#matrix td.check').each(function () {
+            if ($(this).text() == 'true') {
+                $(this).css('background-color','#00CC00');
+            } else if ($(this).text() == 'false') {
+              $(this).css('background-color','#CC0000');
+            }
+        });
+    });
+    </script>
   </head>
 
   <body>
-    <%= JSON.parse(matrix)[0].test.Addresses.Summary.balance %>
+    <table id="matrix">
+      <tr>
+        <th></th>
+        <th>Biteasy (Mainnet)</th>
+        <th>Biteasy (Testnet)</th>
+        <th>Blockchain.info (Mainnet)</th>
+        <th>Blockcypher (Mainnet)</th>
+        <th>Blockcypher (Testnet)</th>
+        <th>Blockr (Mainnet)</th>
+        <th>Blocktrail(Mainnet)</th>
+        <th>Blocktrail (Testnet)</th>
+        <th>Chain (Mainnet)</th>
+        <th>Chain (Testnet)</th>
+      </tr>
+
+      <% var matrix = JSON.parse(matrix) %>
+      <tr>
+        <td class="check">Addresses.Summary.address</td>
+        <td class="check"><%= matrix[0].test.Addresses.Summary.address %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Summary.address %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Summary.address %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Summary.address %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Summary.address %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Summary.address %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Summary.address %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Summary.address %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Summary.address %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Summary.address %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Summary.balance</td>
+        <td class="check"><%= matrix[0].test.Addresses.Summary.balance %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Summary.balance %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Summary.balance %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Summary.balance %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Summary.balance %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Summary.balance %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Summary.balance %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Summary.balance %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Summary.balance %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Summary.balance %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Summary.totalReceived</td>
+        <td class="check"><%= matrix[0].test.Addresses.Summary.totalReceived %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Summary.totalReceived %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Summary.totalReceived %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Summary.totalReceived %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Summary.totalReceived %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Summary.totalReceived %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Summary.totalReceived %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Summary.totalReceived %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Summary.totalReceived %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Summary.totalReceived %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Summary.totalSent</td>
+        <td class="check"><%= matrix[0].test.Addresses.Summary.totalSent %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Summary.totalSent %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Summary.totalSent %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Summary.totalSent %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Summary.totalSent %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Summary.totalSent %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Summary.totalSent %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Summary.totalSent %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Summary.totalSent %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Summary.totalSent %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Summary.txCount</td>
+        <td class="check"><%= matrix[0].test.Addresses.Summary.txCount %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Summary.txCount %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Summary.txCount %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Summary.txCount %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Summary.txCount %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Summary.txCount %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Summary.txCount %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Summary.txCount %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Summary.txCount %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Summary.txCount %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Transactions.blockHeight</td>
+        <td class="check"><%= matrix[0].test.Addresses.Transactions.blockHeight %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Transactions.blockHeight %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Transactions.blockHeight %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Transactions.blockHeight %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Transactions.blockHeight %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Transactions.blockHeight %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Transactions.blockHeight %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Transactions.blockHeight %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Transactions.blockHeight %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Transactions.blockHeight %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Transactions.blockId</td>
+        <td class="check"><%= matrix[0].test.Addresses.Transactions.blockId %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Transactions.blockId %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Transactions.blockId %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Transactions.blockId %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Transactions.blockId %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Transactions.blockId %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Transactions.blockId %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Transactions.blockId %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Transactions.blockId %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Transactions.blockId %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Transactions.hex</td>
+        <td class="check"><%= matrix[0].test.Addresses.Transactions.hex %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Transactions.hex %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Transactions.hex %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Transactions.hex %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Transactions.hex %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Transactions.hex %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Transactions.hex %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Transactions.hex %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Transactions.hex %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Transactions.hex %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Transactions.txHex</td>
+        <td class="check"><%= matrix[0].test.Addresses.Transactions.txHex %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Transactions.txHex %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Transactions.txHex %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Transactions.txHex %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Transactions.txHex %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Transactions.txHex %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Transactions.txHex %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Transactions.txHex %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Transactions.txHex %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Transactions.txHex %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Transactions.txid</td>
+        <td class="check"><%= matrix[0].test.Addresses.Transactions.txid %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Transactions.txid %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Transactions.txid %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Transactions.txid %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Transactions.txid %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Transactions.txid %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Transactions.txid %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Transactions.txid %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Transactions.txid %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Transactions.txid %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Transactions.txId</td>
+        <td class="check"><%= matrix[0].test.Addresses.Transactions.txId %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Transactions.txId %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Transactions.txId %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Transactions.txId %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Transactions.txId %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Transactions.txId %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Transactions.txId %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Transactions.txId %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Transactions.txId %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Transactions.txId %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Unspents.address</td>
+        <td class="check"><%= matrix[0].test.Addresses.Unspents.address %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Unspents.address %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Unspents.address %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Unspents.address %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Unspents.address %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Unspents.address %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Unspents.address %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Unspents.address %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Unspents.address %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Unspents.address %></td>
+      </tr>
+      
+    </table>
   </body>
 
 </html>
