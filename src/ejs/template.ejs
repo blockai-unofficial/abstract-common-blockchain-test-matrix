@@ -13,33 +13,34 @@
         color: #333333;
         width: 100%;
         border-spacing: 0;
-        border-color: #729ea5;
+        border-left: none;
+        border-right: none;
         border-collapse: collapse;
       }
       .matrix th {
         font-size: 16px;
         color: white;
-        background-color: #3f51b5;
-        border-width: 1px;
+        background-color: #283593;
         padding: 8px;
-        border-style: solid;
-        border-color: #729ea5;
+        border-color: white;
         text-align:left;
       }
       .matrix tr {
         background-color: #ffffff;
       }
-      .matrix tr:hover {
-        background-color: #ffff99 !important;
-      }
       .matrix td {
         font-size: 16px;
         border-width: 1px;
-        padding: 8px;
-        border-style: solid;
-        border-color: #729ea5;
+        padding: 10px;
+        border-left: none;
+        border-right: none;
+        border-color: #fff;
       }
       .matrix .title {
+        font-weight: bold;
+        background-color: #9fa8da;
+      }
+      .matrix .score {
         font-weight: bold;
         background-color: #9fa8da;
       }
@@ -48,6 +49,29 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
+        $('#matrix td.score').each(function () {
+          if ($(this).text() == 'Overall Score') {
+            $(this).css('background-color', '#283593');
+            $(this).css('color', 'white');
+          } else if ($(this).text() === 100) {
+            $(this).css('background-color', '#283593');
+            $(this).css('color', 'white');
+          } else if ($(this).text() >= 90) {
+            $(this).css('background-color', '#303f9f');
+            $(this).css('color', 'white');
+          } else if ($(this).text() >= 80) {
+            $(this).css('background-color', '#3949ab');
+            $(this).css('color', 'white');
+          } else if ($(this).text() >= 70) {
+            $(this).css('background-color', '#7986cb');
+          } else if ($(this).text() >= 60) {
+            $(this).css('background-color', '#9fa8da');
+          } else if ($(this).text() >= 50) {
+            $(this).css('background-color', '#c5cae9');
+          } else {
+            $(this).css('background-color', '#e8eaf6');
+          }
+        });
 
         var originalColors = [];
         $('.row').hover(function () {
@@ -81,7 +105,7 @@
         <th><center>Blockcypher (Mainnet)</center></th>
         <th><center>Blockcypher (Testnet)</center></th>
         <th><center>Blockr (Mainnet)</center></th>
-        <th><center>Blocktrail(Mainnet)</center></th>
+        <th><center>Blocktrail (Mainnet)</center></th>
         <th><center>Blocktrail (Testnet)</center></th>
         <th><center>Chain (Mainnet)</center></th>
         <th><center>Chain (Testnet)</center></th>
@@ -90,17 +114,17 @@
       <% var matrix = JSON.parse(matrix) %>
       <% var score = JSON.parse(score) %>
       <tr class="row">
-        <td class="title">Overall Score</td>
-        <td class="check"><center><%= score["biteasyMainnet"] %></center></td>
-        <td class="check"><center><%= score["biteasyTestnet"] %></center></td>
-        <td class="check"><center><%= score["blockchaininfoMainnet"] %></center></td>
-        <td class="check"><center><%= score["blockcypherMainnet"] %></center></td>
-        <td class="check"><center><%= score["blockcypherTestnet"] %></center></td>
-        <td class="check"><center><%= score["blockrMainnet"] %></center></td>
-        <td class="check"><center><%= score["blocktrailMainnet"] %></center></td>
-        <td class="check"><center><%= score["blocktrailTestnet"] %></center></td>
-        <td class="check"><center><%= score["chainMainnet"] %></center></td>
-        <td class="check"><center><%= score["chainTestnet"] %></center></td>
+        <td class="score">Overall Score</td>
+        <td class="score"><center><%= score["biteasyMainnet"] %></center></td>
+        <td class="score"><center><%= score["biteasyTestnet"] %></center></td>
+        <td class="score"><center><%= score["blockchaininfoMainnet"] %></center></td>
+        <td class="score"><center><%= score["blockcypherMainnet"] %></center></td>
+        <td class="score"><center><%= score["blockcypherTestnet"] %></center></td>
+        <td class="score"><center><%= score["blockrMainnet"] %></center></td>
+        <td class="score"><center><%= score["blocktrailMainnet"] %></center></td>
+        <td class="score"><center><%= score["blocktrailTestnet"] %></center></td>
+        <td class="score"><center><%= score["chainMainnet"] %></center></td>
+        <td class="score"><center><%= score["chainTestnet"] %></center></td>
       </tr>
       <tr class="row">
         <td class="title">Addresses.Summary.address</td>
