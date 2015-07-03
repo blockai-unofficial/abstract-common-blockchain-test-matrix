@@ -1,12 +1,24 @@
 var generateMatrix = require('./abstractCBTester.js');
 
 var matrix;
-generateMatrix(function (m){
-  matrix = m;
-  matrix.forEach(function (apiProvider){
-    console.log(apiProvider.name + " : " + scoreProvider(apiProvider));
+
+function generateScores(callback){
+  generateMatrix(function (m){
+    matrix = m;
+    score = [];
+    var count = 0;
+    matrix.forEach(function (apiProvider){
+      var entry = {};
+      entry[apiProvider.name] = scoreProvider(apiProvider);
+      score.push(entry);
+
+      if(++count === matrix.length){
+        callback(score);
+      }
+    });
   });
-});
+}
+
 
 //score a api provider on a somewhat subjective basis on importance
 //of certain fields specified by abstract-common-blockchain
@@ -125,3 +137,6 @@ function scoreProvider(apiProviderObj){
 
   return score;
 }
+
+
+module.exports(generateScores);
