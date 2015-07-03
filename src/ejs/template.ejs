@@ -34,6 +34,19 @@
 
       <% var matrix = JSON.parse(matrix) %>
       <tr>
+        <td class="check">Overall Score</td>
+        <td class="check"><%=  %></td>
+        <td class="check"><%=  %></td>
+        <td class="check"><%=  %></td>
+        <td class="check"><%=  %></td>
+        <td class="check"><%=  %></td>
+        <td class="check"><%=  %></td>
+        <td class="check"><%=  %></td>
+        <td class="check"><%=  %></td>
+        <td class="check"><%=  %></td>
+        <td class="check"><%=  %></td>
+      </tr>
+      <tr>
         <td class="check">Addresses.Summary.address</td>
         <td class="check"><%= matrix[0].test.Addresses.Summary.address %></td>
         <td class="check"><%= matrix[1].test.Addresses.Summary.address %></td>
@@ -189,7 +202,994 @@
         <td class="check"><%= matrix[8].test.Addresses.Unspents.address %></td>
         <td class="check"><%= matrix[9].test.Addresses.Unspents.address %></td>
       </tr>
-      
+      <tr>
+        <td class="check">Addresses.Unspents.confirmations</td>
+        <td class="check"><%= matrix[0].test.Addresses.Unspents.confirmations %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Unspents.confirmations %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Unspents.confirmations %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Unspents.confirmations %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Unspents.confirmations %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Unspents.confirmations %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Unspents.confirmations %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Unspents.confirmations %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Unspents.confirmations %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Unspents.confirmations %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Unspents.txid</td>
+        <td class="check"><%= matrix[0].test.Addresses.Unspents.txid %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Unspents.txid %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Unspents.txid %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Unspents.txid %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Unspents.txid %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Unspents.txid %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Unspents.txid %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Unspents.txid %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Unspents.txid %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Unspents.txid %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Unspents.txId</td>
+        <td class="check"><%= matrix[0].test.Addresses.Unspents.txId %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Unspents.txId %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Unspents.txId %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Unspents.txId %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Unspents.txId %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Unspents.txId %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Unspents.txId %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Unspents.txId %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Unspents.txId %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Unspents.txId %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Unspents.value</td>
+        <td class="check"><%= matrix[0].test.Addresses.Unspents.value %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Unspents.value %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Unspents.value %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Unspents.value %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Unspents.value %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Unspents.value %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Unspents.value %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Unspents.value %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Unspents.value %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Unspents.value %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Unspents.amount</td>
+        <td class="check"><%= matrix[0].test.Addresses.Unspents.amount %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Unspents.amount %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Unspents.amount %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Unspents.amount %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Unspents.amount %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Unspents.amount %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Unspents.amount %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Unspents.amount %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Unspents.amount %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Unspents.amount %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Unspents.vout</td>
+        <td class="check"><%= matrix[0].test.Addresses.Unspents.vout %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Unspents.vout %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Unspents.vout %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Unspents.vout %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Unspents.vout %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Unspents.vout %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Unspents.vout %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Unspents.vout %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Unspents.vout %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Unspents.vout %></td>
+      </tr>
+      <tr>
+        <td class="check">Addresses.Unspents.scriptPubKey</td>
+        <td class="check"><%= matrix[0].test.Addresses.Unspents.scriptPubKey %></td>
+        <td class="check"><%= matrix[1].test.Addresses.Unspents.scriptPubKey %></td>
+        <td class="check"><%= matrix[2].test.Addresses.Unspents.scriptPubKey %></td>
+        <td class="check"><%= matrix[3].test.Addresses.Unspents.scriptPubKey %></td>
+        <td class="check"><%= matrix[4].test.Addresses.Unspents.scriptPubKey %></td>
+        <td class="check"><%= matrix[5].test.Addresses.Unspents.scriptPubKey %></td>
+        <td class="check"><%= matrix[6].test.Addresses.Unspents.scriptPubKey %></td>
+        <td class="check"><%= matrix[7].test.Addresses.Unspents.scriptPubKey %></td>
+        <td class="check"><%= matrix[8].test.Addresses.Unspents.scriptPubKey %></td>
+        <td class="check"><%= matrix[9].test.Addresses.Unspents.scriptPubKey %></td>
+      </tr>
+      <tr>
+        <td class="check">Blocks.Get.blockHex</td>
+        <td class="check"><%= matrix[0].test.Blocks.Get.blockHex %></td>
+        <td class="check"><%= matrix[1].test.Blocks.Get.blockHex %></td>
+        <td class="check"><%= matrix[2].test.Blocks.Get.blockHex %></td>
+        <td class="check"><%= matrix[3].test.Blocks.Get.blockHex %></td>
+        <td class="check"><%= matrix[4].test.Blocks.Get.blockHex %></td>
+        <td class="check"><%= matrix[5].test.Blocks.Get.blockHex %></td>
+        <td class="check"><%= matrix[6].test.Blocks.Get.blockHex %></td>
+        <td class="check"><%= matrix[7].test.Blocks.Get.blockHex %></td>
+        <td class="check"><%= matrix[8].test.Blocks.Get.blockHex %></td>
+        <td class="check"><%= matrix[9].test.Blocks.Get.blockHex %></td>
+      </tr>
+      <tr>
+        <td class="check">Blocks.Get.blockId</td>
+        <td class="check"><%= matrix[0].test.Blocks.Get.blockId %></td>
+        <td class="check"><%= matrix[1].test.Blocks.Get.blockId %></td>
+        <td class="check"><%= matrix[2].test.Blocks.Get.blockId %></td>
+        <td class="check"><%= matrix[3].test.Blocks.Get.blockId %></td>
+        <td class="check"><%= matrix[4].test.Blocks.Get.blockId %></td>
+        <td class="check"><%= matrix[5].test.Blocks.Get.blockId %></td>
+        <td class="check"><%= matrix[6].test.Blocks.Get.blockId %></td>
+        <td class="check"><%= matrix[7].test.Blocks.Get.blockId %></td>
+        <td class="check"><%= matrix[8].test.Blocks.Get.blockId %></td>
+        <td class="check"><%= matrix[9].test.Blocks.Get.blockId %></td>
+      </tr>
+      <tr>
+        <td class="check">Blocks.Latest.blockHex</td>
+        <td class="check"><%= matrix[0].test.Blocks.Latest.blockHex %></td>
+        <td class="check"><%= matrix[1].test.Blocks.Latest.blockHex %></td>
+        <td class="check"><%= matrix[2].test.Blocks.Latest.blockHex %></td>
+        <td class="check"><%= matrix[3].test.Blocks.Latest.blockHex %></td>
+        <td class="check"><%= matrix[4].test.Blocks.Latest.blockHex %></td>
+        <td class="check"><%= matrix[5].test.Blocks.Latest.blockHex %></td>
+        <td class="check"><%= matrix[6].test.Blocks.Latest.blockHex %></td>
+        <td class="check"><%= matrix[7].test.Blocks.Latest.blockHex %></td>
+        <td class="check"><%= matrix[8].test.Blocks.Latest.blockHex %></td>
+        <td class="check"><%= matrix[9].test.Blocks.Latest.blockHex %></td>
+      </tr>
+      <tr>
+        <td class="check">Blocks.Latest.blockId</td>
+        <td class="check"><%= matrix[0].test.Blocks.Latest.blockId %></td>
+        <td class="check"><%= matrix[1].test.Blocks.Latest.blockId %></td>
+        <td class="check"><%= matrix[2].test.Blocks.Latest.blockId %></td>
+        <td class="check"><%= matrix[3].test.Blocks.Latest.blockId %></td>
+        <td class="check"><%= matrix[4].test.Blocks.Latest.blockId %></td>
+        <td class="check"><%= matrix[5].test.Blocks.Latest.blockId %></td>
+        <td class="check"><%= matrix[6].test.Blocks.Latest.blockId %></td>
+        <td class="check"><%= matrix[7].test.Blocks.Latest.blockId %></td>
+        <td class="check"><%= matrix[8].test.Blocks.Latest.blockId %></td>
+        <td class="check"><%= matrix[9].test.Blocks.Latest.blockId %></td>
+      </tr>
+      <tr>
+        <td class="check">Blocks.Transactions.blockId</td>
+        <td class="check"><%= matrix[0].test.Blocks.Transactions.blockId %></td>
+        <td class="check"><%= matrix[1].test.Blocks.Transactions.blockId %></td>
+        <td class="check"><%= matrix[2].test.Blocks.Transactions.blockId %></td>
+        <td class="check"><%= matrix[3].test.Blocks.Transactions.blockId %></td>
+        <td class="check"><%= matrix[4].test.Blocks.Transactions.blockId %></td>
+        <td class="check"><%= matrix[5].test.Blocks.Transactions.blockId %></td>
+        <td class="check"><%= matrix[6].test.Blocks.Transactions.blockId %></td>
+        <td class="check"><%= matrix[7].test.Blocks.Transactions.blockId %></td>
+        <td class="check"><%= matrix[8].test.Blocks.Transactions.blockId %></td>
+        <td class="check"><%= matrix[9].test.Blocks.Transactions.blockId %></td>
+      </tr>
+      <tr>
+        <td class="check">Blocks.Transactions.txid</td>
+        <td class="check"><%= matrix[0].test.Blocks.Transactions.txid %></td>
+        <td class="check"><%= matrix[1].test.Blocks.Transactions.txid %></td>
+        <td class="check"><%= matrix[2].test.Blocks.Transactions.txid %></td>
+        <td class="check"><%= matrix[3].test.Blocks.Transactions.txid %></td>
+        <td class="check"><%= matrix[4].test.Blocks.Transactions.txid %></td>
+        <td class="check"><%= matrix[5].test.Blocks.Transactions.txid %></td>
+        <td class="check"><%= matrix[6].test.Blocks.Transactions.txid %></td>
+        <td class="check"><%= matrix[7].test.Blocks.Transactions.txid %></td>
+        <td class="check"><%= matrix[8].test.Blocks.Transactions.txid %></td>
+        <td class="check"><%= matrix[9].test.Blocks.Transactions.txid %></td>
+      </tr>
+      <tr>
+        <td class="check">Blocks.Transactions.txId</td>
+        <td class="check"><%= matrix[0].test.Blocks.Transactions.txId %></td>
+        <td class="check"><%= matrix[1].test.Blocks.Transactions.txId %></td>
+        <td class="check"><%= matrix[2].test.Blocks.Transactions.txId %></td>
+        <td class="check"><%= matrix[3].test.Blocks.Transactions.txId %></td>
+        <td class="check"><%= matrix[4].test.Blocks.Transactions.txId %></td>
+        <td class="check"><%= matrix[5].test.Blocks.Transactions.txId %></td>
+        <td class="check"><%= matrix[6].test.Blocks.Transactions.txId %></td>
+        <td class="check"><%= matrix[7].test.Blocks.Transactions.txId %></td>
+        <td class="check"><%= matrix[8].test.Blocks.Transactions.txId %></td>
+        <td class="check"><%= matrix[9].test.Blocks.Transactions.txId %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.hex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.hex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.hex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.hex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.hex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.hex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.hex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.hex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.hex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.hex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.hex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.txHex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.txHex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.txHex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.txHex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.txHex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.txHex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.txHex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.txHex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.txHex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.txHex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.txHex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.txid</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.txid %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.txid %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.txid %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.txid %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.txid %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.txid %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.txid %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.txid %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.txid %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.txid %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.txId</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.txId %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.txId %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.txId %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.txId %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.txId %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.txId %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.txId %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.txId %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.txId %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.txId %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.version</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.version %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.version %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.version %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.version %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.version %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.version %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.version %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.version %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.version %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.version %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.locktime</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.locktime %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.locktime %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.locktime %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.locktime %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.locktime %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.locktime %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.locktime %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.locktime %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.locktime %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.locktime %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.fee</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.fee %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.fee %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.fee %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.fee %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.fee %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.fee %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.fee %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.fee %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.fee %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.fee %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vin.txid</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vin.txid %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vin.txid %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vin.txid %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vin.txid %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vin.txid %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vin.txid %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vin.txid %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vin.txid %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vin.txid %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vin.txid %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vin.txId</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vin.txId %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vin.txId %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vin.txId %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vin.txId %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vin.txId %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vin.txId %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vin.txId %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vin.txId %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vin.txId %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vin.txId %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vin.vout</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vin.vout %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vin.vout %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vin.vout %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vin.vout %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vin.vout %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vin.vout %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vin.vout %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vin.vout %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vin.vout %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vin.vout %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vin.scriptSig.asm</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vin.scriptSig.asm %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vin.scriptSig.hex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vin.scriptSig.hex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vin.sequence</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vin.sequence %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vin.sequence %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vin.sequence %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vin.sequence %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vin.sequence %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vin.sequence %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vin.sequence %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vin.sequence %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vin.sequence %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vin.sequence %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vout.value</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vout.value %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vout.value %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vout.value %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vout.value %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vout.value %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vout.value %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vout.value %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vout.value %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vout.value %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vout.value %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vout.index</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vout.index %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vout.index %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vout.index %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vout.index %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vout.index %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vout.index %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vout.index %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vout.index %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vout.index %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vout.index %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vout.n</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vout.n %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vout.n %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vout.n %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vout.n %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vout.n %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vout.n %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vout.n %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vout.n %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vout.n %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vout.n %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vout.spentTxid</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vout.spentTxid %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vout.spentTxid %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vout.spentTxid %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vout.spentTxid %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vout.spentTxid %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vout.spentTxid %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vout.spentTxid %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vout.spentTxid %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vout.spentTxid %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vout.spentTxid %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vout.scriptPubKey.asm</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vout.scriptPubKey.asm %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vout.scriptPubKey.hex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vout.scriptPubKey.hex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vout.scriptPubKey.reqSigs</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vout.scriptPubKey.reqSigs %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vout.scriptPubKey.type</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vout.scriptPubKey.type %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.vout.scriptPubKey.addresses</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.vout.scriptPubKey.addresses %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.blocktime</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.blocktime %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.blocktime %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.blocktime %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.blocktime %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.blocktime %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.blocktime %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.blocktime %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.blocktime %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.blocktime %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.blocktime %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.blockhash</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.blockhash %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.blockhash %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.blockhash %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.blockhash %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.blockhash %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.blockhash %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.blockhash %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.blockhash %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.blockhash %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.blockhash %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.blockindex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.blockindex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.blockindex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.blockindex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.blockindex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.blockindex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.blockindex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.blockindex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.blockindex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.blockindex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.blockindex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.confirmations</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.confirmations %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.confirmations %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.confirmations %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.confirmations %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.confirmations %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.confirmations %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.confirmations %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.confirmations %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.confirmations %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.confirmations %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Get.timeReceived</td>
+        <td class="check"><%= matrix[0].test.Transactions.Get.timeReceived %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Get.timeReceived %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Get.timeReceived %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Get.timeReceived %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Get.timeReceived %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Get.timeReceived %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Get.timeReceived %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Get.timeReceived %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Get.timeReceived %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Get.timeReceived %></td>
+      </tr>
+            <tr>
+        <td class="check">Transactions.Latest.hex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.hex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.hex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.hex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.hex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.hex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.hex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.hex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.hex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.hex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.hex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.txHex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.txHex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.txHex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.txHex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.txHex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.txHex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.txHex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.txHex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.txHex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.txHex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.txHex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.txid</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.txid %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.txid %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.txid %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.txid %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.txid %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.txid %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.txid %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.txid %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.txid %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.txid %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.txId</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.txId %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.txId %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.txId %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.txId %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.txId %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.txId %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.txId %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.txId %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.txId %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.txId %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.version</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.version %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.version %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.version %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.version %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.version %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.version %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.version %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.version %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.version %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.version %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.locktime</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.locktime %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.locktime %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.locktime %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.locktime %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.locktime %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.locktime %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.locktime %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.locktime %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.locktime %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.locktime %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.fee</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.fee %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.fee %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.fee %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.fee %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.fee %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.fee %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.fee %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.fee %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.fee %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.fee %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vin.txid</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vin.txid %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vin.txid %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vin.txid %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vin.txid %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vin.txid %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vin.txid %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vin.txid %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vin.txid %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vin.txid %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vin.txid %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vin.txId</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vin.txId %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vin.txId %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vin.txId %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vin.txId %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vin.txId %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vin.txId %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vin.txId %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vin.txId %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vin.txId %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vin.txId %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vin.vout</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vin.vout %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vin.vout %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vin.vout %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vin.vout %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vin.vout %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vin.vout %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vin.vout %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vin.vout %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vin.vout %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vin.vout %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vin.scriptSig.asm</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vin.scriptSig.asm %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vin.scriptSig.asm %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vin.scriptSig.hex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vin.scriptSig.hex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vin.scriptSig.hex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vin.sequence</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vin.sequence %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vin.sequence %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vin.sequence %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vin.sequence %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vin.sequence %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vin.sequence %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vin.sequence %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vin.sequence %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vin.sequence %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vin.sequence %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vout.value</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vout.value %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vout.value %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vout.value %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vout.value %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vout.value %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vout.value %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vout.value %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vout.value %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vout.value %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vout.value %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vout.index</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vout.index %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vout.index %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vout.index %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vout.index %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vout.index %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vout.index %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vout.index %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vout.index %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vout.index %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vout.index %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vout.n</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vout.n %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vout.n %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vout.n %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vout.n %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vout.n %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vout.n %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vout.n %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vout.n %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vout.n %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vout.n %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vout.spentTxid</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vout.spentTxid %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vout.spentTxid %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vout.spentTxid %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vout.spentTxid %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vout.spentTxid %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vout.spentTxid %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vout.spentTxid %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vout.spentTxid %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vout.spentTxid %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vout.spentTxid %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vout.scriptPubKey.asm</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vout.scriptPubKey.asm %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vout.scriptPubKey.hex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vout.scriptPubKey.hex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vout.scriptPubKey.reqSigs</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vout.scriptPubKey.reqSigs %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vout.scriptPubKey.type</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vout.scriptPubKey.type %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.vout.scriptPubKey.addresses</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.vout.scriptPubKey.addresses %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.blocktime</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.blocktime %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.blocktime %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.blocktime %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.blocktime %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.blocktime %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.blocktime %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.blocktime %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.blocktime %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.blocktime %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.blocktime %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.blockhash</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.blockhash %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.blockhash %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.blockhash %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.blockhash %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.blockhash %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.blockhash %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.blockhash %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.blockhash %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.blockhash %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.blockhash %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.blockindex</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.blockindex %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.blockindex %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.blockindex %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.blockindex %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.blockindex %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.blockindex %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.blockindex %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.blockindex %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.blockindex %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.blockindex %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.confirmations</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.confirmations %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.confirmations %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.confirmations %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.confirmations %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.confirmations %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.confirmations %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.confirmations %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.confirmations %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.confirmations %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.confirmations %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Latest.timeReceived</td>
+        <td class="check"><%= matrix[0].test.Transactions.Latest.timeReceived %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Latest.timeReceived %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Latest.timeReceived %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Latest.timeReceived %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Latest.timeReceived %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Latest.timeReceived %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Latest.timeReceived %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Latest.timeReceived %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Latest.timeReceived %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Latest.timeReceived %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Outputs.scriptPubKey</td>
+        <td class="check"><%= matrix[0].test.Transactions.Outputs.scriptPubKey %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Outputs.scriptPubKey %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Outputs.scriptPubKey %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Outputs.scriptPubKey %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Outputs.scriptPubKey %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Outputs.scriptPubKey %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Outputs.scriptPubKey %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Outputs.scriptPubKey %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Outputs.scriptPubKey %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Outputs.scriptPubKey %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Outputs.txid</td>
+        <td class="check"><%= matrix[0].test.Transactions.Outputs.txid %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Outputs.txid %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Outputs.txid %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Outputs.txid %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Outputs.txid %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Outputs.txid %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Outputs.txid %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Outputs.txid %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Outputs.txid %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Outputs.txid %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Outputs.txId</td>
+        <td class="check"><%= matrix[0].test.Transactions.Outputs.txId %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Outputs.txId %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Outputs.txId %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Outputs.txId %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Outputs.txId %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Outputs.txId %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Outputs.txId %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Outputs.txId %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Outputs.txId %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Outputs.txId %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Outputs.value</td>
+        <td class="check"><%= matrix[0].test.Transactions.Outputs.value %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Outputs.value %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Outputs.value %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Outputs.value %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Outputs.value %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Outputs.value %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Outputs.value %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Outputs.value %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Outputs.value %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Outputs.value %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Outputs.vout</td>
+        <td class="check"><%= matrix[0].test.Transactions.Outputs.vout %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Outputs.vout %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Outputs.vout %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Outputs.vout %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Outputs.vout %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Outputs.vout %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Outputs.vout %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Outputs.vout %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Outputs.vout %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Outputs.vout %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Status.blockId</td>
+        <td class="check"><%= matrix[0].test.Transactions.Status.blockId %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Status.blockId %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Status.blockId %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Status.blockId %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Status.blockId %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Status.blockId %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Status.blockId %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Status.blockId %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Status.blockId %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Status.blockId %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Status.txid</td>
+        <td class="check"><%= matrix[0].test.Transactions.Status.txid %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Status.txid %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Status.txid %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Status.txid %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Status.txid %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Status.txid %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Status.txid %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Status.txid %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Status.txid %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Status.txid %></td>
+      </tr>
+      <tr>
+        <td class="check">Transactions.Status.txId</td>
+        <td class="check"><%= matrix[0].test.Transactions.Status.txId %></td>
+        <td class="check"><%= matrix[1].test.Transactions.Status.txId %></td>
+        <td class="check"><%= matrix[2].test.Transactions.Status.txId %></td>
+        <td class="check"><%= matrix[3].test.Transactions.Status.txId %></td>
+        <td class="check"><%= matrix[4].test.Transactions.Status.txId %></td>
+        <td class="check"><%= matrix[5].test.Transactions.Status.txId %></td>
+        <td class="check"><%= matrix[6].test.Transactions.Status.txId %></td>
+        <td class="check"><%= matrix[7].test.Transactions.Status.txId %></td>
+        <td class="check"><%= matrix[8].test.Transactions.Status.txId %></td>
+        <td class="check"><%= matrix[9].test.Transactions.Status.txId %></td>
+      </tr>
     </table>
   </body>
 
