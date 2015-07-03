@@ -2,22 +2,65 @@
 <html>
   <head>
     <title><%= title %></title>
+    <style type="text/css">
+      .matrix {
+        font-size: 16px;
+        color: #333333;
+        width: 100%;
+        border-spacing: 0;
+        border-color: #729ea5;
+        border-collapse: collapse;
+      }
+      .matrix th {
+        font-size: 16px;
+        background-color: #acc8cc;
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #729ea5;
+        text-align:left;
+      }
+      .matrix tr {
+        background-color: #ffffff;
+      }
+      .matrix tr:hover {
+        background-color: #ffff99;
+      }
+      .matrix td {
+        font-size: 16px;
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #729ea5;
+      }
+    </style>
+
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
     <script type="text/javascript">
-    $(document).ready(function () {
+      $(document).ready(function () {
         $('#matrix td.check').each(function () {
-            if ($(this).text() == 'true') {
-                $(this).css('background-color','#00CC00');
-            } else if ($(this).text() == 'false') {
-              $(this).css('background-color','#CC0000');
-            }
+          if ($(this).text() == 'true') {
+            $(this).css('background-color','#00CC00');
+          } else if ($(this).text() == 'false') {
+            $(this).css('background-color','#CC3300');
+          }
         });
-    });
+        $('#matrix td.check').hover(function () {
+          $(this).css('background-color', '#ffff99');
+        }, function () {
+          if ($(this).text() == 'true') {
+            $(this).css('background-color','#00CC00');
+          } else if ($(this).text() == 'false') {
+            $(this).css('background-color','#CC3300');
+          }
+        });
+      });
+
     </script>
   </head>
 
   <body>
-    <table id="matrix">
+    <table id="matrix" class="matrix" border="1">
       <tr>
         <th></th>
         <th>Biteasy (Mainnet)</th>
