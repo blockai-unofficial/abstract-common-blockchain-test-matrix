@@ -1,5 +1,4 @@
-// var generateMatrix = require('./src/abstractCBTester.js');
-var generateMatrix = require('./index.js');
+var generateMatrix = require('./abstractCBTester.js');
 
 var matrix;
 generateMatrix(function (m){
