@@ -157,7 +157,7 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Addresses.Transactions.txId = (resp.txId != null);
           callback(null, testInstance.Addresses.Transactions);
         }
-        else{
+        else {
           callback(null, null);
         }
       });
@@ -176,7 +176,7 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Addresses.Unspents.scriptPubKey = (unspentObj.scriptPubKey != null);
           callback(null, testInstance.Addresses.Unspents);
         }
-        else{
+        else {
           callback(null, null);
         }
       });
@@ -190,7 +190,7 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Blocks.Get.blockId = (blockObj.blockId != null);
           callback(null, testInstance.Blocks.Get);
         }
-        else{
+        else {
           callback(null, null);
         } 
       });
@@ -204,7 +204,7 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Blocks.Latest.blockId = (blockObj.blockId != null);
           callback(null, testInstance.Blocks.Latest);
         }
-        else{
+        else {
           callback(null, null);
         }
       });
@@ -219,7 +219,7 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Blocks.Transactions.txId = (blockObj.txId != null);
           callback(null, testInstance.Blocks.Transactions);
         }
-        else{
+        else {
           callback(null, null);
         }  
       });
@@ -262,7 +262,7 @@ function fillTestInstance(apiProvider, callback) {
 
           callback(null, testInstance.Transactions.Get);
         }
-        else{
+        else {
           callback(null, null);
         }
       });
@@ -342,7 +342,7 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Transactions.Status.txId = (blockObj.txId != null);
           callback(null, testInstance.Transactions.Status);
         }
-        else{
+        else {
           callback(null, null);
         }  
       });
@@ -359,15 +359,11 @@ function populateMatrix(callback) {
   var apiCount = 0;
   testMatrix.forEach(function (apiProvider) {
     fillTestInstance(apiProvider, function () {
-      if(++apiCount === testMatrix.length){
-        callback(JSON.stringify(testMatrix));
+      if (++apiCount === testMatrix.length) {
+        callback(testMatrix);
       }
     });
   });
 }
-
-populateMatrix(function (testMatrix) {
-  console.log(testMatrix);
-});
 
 module.exports = populateMatrix;

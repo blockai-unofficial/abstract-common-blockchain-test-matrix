@@ -1,10 +1,10 @@
 {
   "name": "abstract-common-blockchain-test-matrix",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A module to demonstrate the aspects of common-blockchain that are supported by various blockchain providers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
