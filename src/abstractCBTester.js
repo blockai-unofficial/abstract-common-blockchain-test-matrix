@@ -171,6 +171,7 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Addresses.Unspents.confirmations = (unspentObj.confirmations != null);
           testInstance.Addresses.Unspents.txid = (unspentObj.txid != null);
           testInstance.Addresses.Unspents.txId = (unspentObj.txId != null);
+          testInstance.Addresses.Unspents.vout = (unspentObj.vout != null);
           testInstance.Addresses.Unspents.value = (unspentObj.value != null);
           testInstance.Addresses.Unspents.amount = (unspentObj.amount != null);
           testInstance.Addresses.Unspents.scriptPubKey = (unspentObj.scriptPubKey != null);
@@ -359,6 +360,7 @@ function populateMatrix(callback) {
   var apiCount = 0;
   testMatrix.forEach(function (apiProvider) {
     fillTestInstance(apiProvider, function () {
+      console.log("loaded: apiProvider.name");
       if (++apiCount === testMatrix.length) {
         callback(testMatrix);
       }
