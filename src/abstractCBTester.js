@@ -241,6 +241,7 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Transactions.Get.vin.txid = (transactionObj.vin[0].txid != null);
           testInstance.Transactions.Get.vin.txId = (transactionObj.vin[0].txId != null);
           testInstance.Transactions.Get.vin.vout = (transactionObj.vin[0].vout != null);
+          testInstance.Transactions.Get.vin.addresses = (transactionObj.vin[0].addresses != null);
           testInstance.Transactions.Get.vin.scriptSig.asm = (transactionObj.vin[0].scriptSig.asm != null);
           testInstance.Transactions.Get.vin.scriptSig.hex = (transactionObj.vin[0].scriptSig.hex != null);
           testInstance.Transactions.Get.vin.sequence = (transactionObj.vin[0].sequence != null);
@@ -284,6 +285,7 @@ function fillTestInstance(apiProvider, callback) {
           testInstance.Transactions.Latest.vin.txid = (transactionObj.vin[0].txid != null);
           testInstance.Transactions.Latest.vin.txId = (transactionObj.vin[0].txId != null);
           testInstance.Transactions.Latest.vin.vout = (transactionObj.vin[0].vout != null);
+          testInstance.Transactions.Latest.vin.addresses = (transactionObj.vin[0].addresses != null);
           testInstance.Transactions.Latest.vin.scriptSig.asm = (transactionObj.vin[0].scriptSig.asm != null);
           testInstance.Transactions.Latest.vin.scriptSig.hex = (transactionObj.vin[0].scriptSig.hex != null);
           testInstance.Transactions.Latest.vin.sequence = (transactionObj.vin[0].sequence != null);
@@ -360,7 +362,7 @@ function populateMatrix(callback) {
   var apiCount = 0;
   testMatrix.forEach(function (apiProvider) {
     fillTestInstance(apiProvider, function () {
-      console.log("loaded: apiProvider.name");
+      console.log("loaded: " +  apiProvider.name);
       if (++apiCount === testMatrix.length) {
         callback(testMatrix);
       }
